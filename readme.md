@@ -9,6 +9,7 @@ Concept
 
 ### Overview
 The idea is this project is to make musical creatures who's musical nature is their genetics. These creatures exist in a world basically modeled on bacteria. Their genome consists of the following parameters which are stored as numbers between 0.0f and 1.0f:  
+
 	1. Edge col: physical only, no interaction
 	2. Shape: physical only
 	3. Size: bigger size decreases life span, also gives larger surface area for "bumping" which is detremental to health
@@ -22,9 +23,11 @@ The idea is this project is to make musical creatures who's musical nature is th
 
 ### States
 Each creature has three modes of activity or states:  
+
 	* Aloof
 	* Food
-	* Mate  
+	* Mate
+
 Creatures change state after moving (see -moving- below). The probability of which state is defined by their genes (see above).
 
 ### Moving
@@ -43,14 +46,17 @@ The world itself enforces certain rules which are -supernatural-. The number of 
 
 ### Bumping
 Introduced to curb overcrowding, "bumping" is a health decrease dealt when creatures' boundary intersects and their intential direction is through the other creature. There are several limits put on the bumping feature:  
+
 	* No more than 80 bumps can be dealt to a creature in one time unit.
 	* A creature cannot be continuously bumped for more that 0.3 time units.  
 
 ### Death
 Creatures can die in any of the following means:  
+
 	1. Starve: run out of food. Actually food replenishes health, which is always decreasing by 0.1 health units per time unit, so it is loss of health.
 	2. Old age: each creature has a maximum life span which is determined by its genes. If it reaches this it dies no matter how healthy/well fed it is.
 	3. Child birth: Creatures may only have a certain number of children. If it reaches this limit it dies after spawning its last child.  
+
 Supernaturally, creatures can be killed by the user (or god, see below).
 
 ![Main screen shot](/screenshots/genie-scrshot-2.png)
@@ -62,9 +68,12 @@ At the moment the UI is very basic and doesn't work too well. This is definitely
 
 The controls are mouse and keyboard.
 Mouse:  
+
 	* Left click and hold drag the view around
 	* Right click and hold changes to view size.  
+
 Keyboard:  
+
 	* Space - Toggle debug information, most noticibly the state names and life time of each creature.
 	* d - double the world size. Do this if a population explosion happens.
 	* s - _Children of Men_, toggles creatures fertility
@@ -76,6 +85,7 @@ Keyboard:
 The mouse pointer is actually a large circle which is the god zone. Its size in the world is determined by the view scale as it is projected from our view onto the world as it is scaled.
 
 There are three god states which determine what happens when the mouse left button is clicked:  
+
 	1. Neutral (gray): Benevolence and noninterferience. Nothing happens.
 	2. Destroy (red): Angry, all creatures in the god zone are killed and turned into food.
 	3. Music (green): Clicking toggles musical interpretation.  
