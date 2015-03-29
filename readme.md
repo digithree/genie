@@ -2,7 +2,7 @@ Genie
 =====
 A _Genetic Creature Sonfier_ written in Processing.
 
-![Main screen shot](/screenshots/genie-scrshot-1)
+![Main screen shot](/screenshots/genie-scrshot-1.png)
 
 Concept
 -------
@@ -53,8 +53,8 @@ Creatures can die in any of the following means:
 	3. Child birth: Creatures may only have a certain number of children. If it reaches this limit it dies after spawning its last child.
 Supernaturally, creatures can be killed by the user (or god, see below).
 
-![Main screen shot](/screenshots/genie-scrshot-2)
-![Main screen shot](/screenshots/genie-scrshot-3)
+![Main screen shot](/screenshots/genie-scrshot-2.png)
+![Main screen shot](/screenshots/genie-scrshot-3.png)
 
 User interface
 -----------------
@@ -90,4 +90,4 @@ Some statistics are outputed to the console, for example:
 
 Actors and food describe the current number of each of these in the world. Births and mut(ations) is the accumulative count of each of these events. The rest except, strav(e), aged, childB(irth) and bumps are the count of deaths by each of these means.
 
-![Main screen shot](/screenshots/genie-scrshot-4)
+![Main screen shot](/screenshots/genie-scrshot-4.png)
